@@ -14,6 +14,7 @@
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
@@ -22,7 +23,7 @@
     margin-left: 40px;
 }
 
-h1{
+h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 600;
@@ -48,6 +49,7 @@ button {
     font-weight: 600;
     cursor: pointer;
 }
+
 button:hover {
     background-color: hsl(300, 69%, 71%);
     color: white;
@@ -69,4 +71,52 @@ button:hover {
 .fa-brands:hover {
     color: hsl(300, 69%, 71%);
     transition: 0.3s;
+}
+
+@media screen and (max-width: 1304px) {
+    .container {
+        height: 1000px;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .paragraphs {
+        margin-top: 50px;
+    }
+    h1, p {
+        width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+    }
+    button {
+        padding: 8px 30px;
+        font-size: 10px;
+    }
 }
